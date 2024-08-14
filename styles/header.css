@@ -1,0 +1,177 @@
+.header {
+    height: 55px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 55 px;  
+    background-color: white;
+    z-index: 1000;
+}
+
+.left-bar {
+    flex: .5;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-left: 20px;
+    
+}
+
+.yt-logo {
+    height: 90px;
+    width: 110px;
+    align-items: center;
+    padding-left: 20px;
+}
+
+.middle-bar {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    /* background-color: lightcoral; */
+}
+
+.search_bar {
+    height: 34px;
+    flex : 1;
+    padding-left: 14px;
+    border-radius: 50px 0px 0px 50px;
+    background-color: rgb(248, 247, 247);
+    border: 2px solid rgb(179, 177, 177);
+    width: 0px;
+    font-size: 18px;
+}
+
+.search_bar::placeholder {
+    color: rgb(179, 177, 177);
+    font-size: 14px;
+    padding-left: 10px;
+    text-align: center;
+}
+
+.search-button {
+    height: 40px;
+    margin: 0px;
+    border-radius: 0px 50px 50px 0px;
+    background-color:  rgb(248, 247, 247);
+    border: 2px solid rgb(179, 177, 177);
+    justify-content: center;
+    align-items: center;
+} 
+
+.search-button .tooltip {
+    position: absolute;
+    bottom: -30px;
+    right: 40px;
+    background-color: rgb(248, 247, 247);
+    border: 2px solid rgb(179, 177, 177);
+    border-radius: 5px;
+    padding: 5px;
+    font-size: 14px;
+    opacity: 0;
+    transition: opacity 0.2s;
+    pointer-events: none;
+}
+
+.search-button:hover .tooltip {
+    opacity: 1;
+}
+
+.speaker-button {
+    display: flex;
+    justify-content: center;
+    width: 36px;
+    height: 36px;
+    margin-left: 10px;
+    margin-right: 0px;
+    border-radius: 50%;
+    background-color:  rgb(255, 255, 255);
+    border: 2px solid rgb(255, 255, 255);
+    justify-content: center;
+    align-items: center;
+}
+
+.speaker-button:hover {
+    /* border-bottom:  rgb(220, 220, 220); */
+    background-color: rgb(220, 220, 220);
+}
+
+.speaker-button .tooltip {
+    position: absolute;
+    bottom: -30px;
+    background-color: rgb(248, 247, 247);
+    border: 2px solid rgb(179, 177, 177);
+    border-radius: 5px;
+    padding: 5px;
+    font-size: 14px;
+    opacity: 0;
+    transition: opacity 0.2s;
+    pointer-events: none;
+    white-space: nowrap;
+}
+
+.speaker-button:hover .tooltip {
+    opacity: 1;
+}
+
+.microphone {
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.search {
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.right-bar {
+    flex: .5;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    flex-shrink: 0;
+}
+
+.user-pic {
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+.header-button {
+    margin-right: 20px;
+    border-radius: 50px;
+    border: 1px solid rgb(255, 255, 255);
+    background-color: rgb(255, 255, 255);
+    position: relative;
+}
+
+.header-button:hover {
+    border-bottom:  rgb(220, 220, 220);
+    background-color: rgb(220, 220, 220);
+}
+
+.notification {
+    position: absolute;
+    right : 5px;
+    top: 5px;
+    background-color: red;
+    border-radius: 50%;
+    padding-left: 4px;
+    padding-right: 4px;
+    color: white;
+    font-size: 10px;
+}
